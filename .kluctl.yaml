@@ -2,4 +2,4 @@ discriminator: "kluctl-{{ target.name }}"
 
 targets:
   - name: k8s-ims
-    context: k8s-ims
+    #context: k8s-ims
