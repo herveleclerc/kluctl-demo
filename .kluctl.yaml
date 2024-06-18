@@ -1,0 +1,9 @@
+discriminator: "kluctl-{{ target.name }}"
+
+targets:
+  - name: k8s-ims
+    context: k8s-ims
+    args:
+      environment: dt
+args:
+  - name: environment

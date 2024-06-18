@@ -1,0 +1,5 @@
+deployments:
+- include: kluctl-controller
+- barrier: true
+  message: "wait for controller"
+- include: kluctl-webui
