@@ -2,7 +2,7 @@
 apiVersion: gitops.kluctl.io/v1beta1
 kind: KluctlDeployment
 metadata:
-  name: kluctl-gitops-demo
+  name: kluctl-demo
   namespace: kluctl-gitops
 spec:
   interval: 1m
