@@ -3,13 +3,13 @@ apiVersion: gitops.kluctl.io/v1beta1
 kind: KluctlDeployment
 metadata:
   name: kluctl-demo
-  namespace: kluctl-gitops
+  namespace: kluctl-system
 spec:
   interval: 1m
   source:
     git:
       url: https://github.com/herveleclerc/kluctl-demo.git
-      path: .
+#      path: .
   target: k8s-ims
   context: k8s-ims
   prune: true

@@ -1,4 +1,5 @@
 deployments:
-- include: base
+- path: namespaces
+
 commonLabels:
   aw.kluctl.io/deployment-project: "kluctl-aw"
