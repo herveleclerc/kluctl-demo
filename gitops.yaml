@@ -1,0 +1,16 @@
+# clusters/all/gitops.yaml
+apiVersion: gitops.kluctl.io/v1beta1
+kind: KluctlDeployment
+metadata:
+  name: kluctl-gitops-demo
+  namespace: kluctl-gitops
+spec:
+  interval: 1m
+  source:
+    git:
+      url: https://github.com/herveleclerc/kluctl-demo.git
+      path: .
+  target: k8s-ims
+  context: k8s-ims
+  prune: true
+  delete: true
