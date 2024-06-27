@@ -10,5 +10,6 @@ spec:
     git:
       url: https://github.com/herveleclerc/kluctl-demo.git
       path: demo 
+  target: k8s-ims
   prune: true
   delete: true
