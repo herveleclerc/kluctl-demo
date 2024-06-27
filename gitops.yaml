@@ -9,8 +9,7 @@ spec:
   source:
     git:
       url: https://github.com/herveleclerc/kluctl-demo.git
-#      path: .
+      path: demo 
   target: k8s-ims
-#  context: k8s-ims
   prune: true
   delete: true
